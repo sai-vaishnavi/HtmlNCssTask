@@ -2,18 +2,20 @@
 
 
 
+
 <!DOCTYPE html>
 <head>
 <title>sign in</title>
     <style>
         .header {
-            width=100%;
+            width=35%;
   padding: 5px;
   text-align: center;
   background: #48D1CC;
   color: white;
 align-self:  flex-end;
   font-size: 15px;
+            border-style: ridge;
 }
       
     .b{
@@ -23,17 +25,19 @@ align-self:  flex-end;
 }
 .c {
   position: absolute;
-  border-right:auto;
+  left:300px;
+    align-content: flex-end;
+    align-items: flex-end
  
 } 
-        * {box-sizing: border-box}
+        * {box-sizing:border-box}
 
 /* style the container */
 .container {
   position: relative;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px 0 50px 0;
+  border-radius: 0px;
+ 
+  padding: 15px 0 40px 0;
 }
 
 /* style inputs and link buttons */
@@ -50,7 +54,18 @@ input,
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
 }
-
+     input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 7px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
 input:hover,
 .btn:hover {
   opacity: 1;
@@ -60,11 +75,7 @@ input:hover,
   left: auto;
  
 }
-.c {
-  position: absolute;
-  border-right:auto;
- 
-} 
+
 
 /* add appropriate colors to fb, twitter and google buttons */
         
@@ -87,7 +98,7 @@ input:hover,
 }
  .cop {
 
-  width: 50%;
+  width: 33%;
   margin: auto;
   padding: 0 0;
   margin-top: 0px;
@@ -116,8 +127,18 @@ input:hover,
 /* style the submit button */
 input[type=submit] {
   background-color: #48D1CC;
-  color: white;
+ width: 100%;
+  padding:17px;
+  border: none;
+  border-radius: 4px;
+  margin: 0px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
   cursor: pointer;
+    
 }
 
 input[type=submit]:hover {
@@ -127,17 +148,76 @@ input[type=submit]:hover {
 /* Two-column layout */
 .col {
 
-  width: 50%;
+  width: 33%;
   margin: auto;
   padding: 0 50px;
-  margin-top: 45px;
+  margin-top: 0px;
     
 }
-.col1 {
+        .com{
 
-  width: 50%;
+  width: 30%;
   margin: auto;
   padding: 0 50px;
+  margin-top: 10px;
+    
+}
+    .cosine {
+border-style: groove;
+          border-color: aliceblue;
+  width: 25%;
+  margin:auto;
+         padding: 0 0;
+  margin-top: 15px; 
+        
+
+}
+        .bg-email-icon {
+  background: url('https://d1ululg65bfe3q.cloudfront.net/images/troy/email-icon.png') no-repeat 97.25% 10px white;
+  padding-left: 5px;
+  padding-right: 50px;
+  width: 375px;
+  height: 30px;
+  border: 1px white solid;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.bg-lock-icon {
+  background: url('https://d1ululg65bfe3q.cloudfront.net/images/troy/lock-icon.png') no-repeat 96.75% 10px white;
+  padding-left: 5px;
+  padding-right: 50px;
+  width: 375px;
+  height: 30px;
+  border: 1px white solid;
+  border-top-width: 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+    
+}  
+           .tac {
+       border-style: groove;
+               border-color: aliceblue;
+  width: 25%;
+  margin:auto;
+         padding: 0 0;
+  margin-top: 15px;
+
+    
+}  
+        .sine {
+
+  width: 35%;
+  margin: auto;
+  padding: 0 0;
+  margin-top: 25px;
+    
+}  
+.col1 {
+
+  width: 25%;
+  margin: auto;
+  padding: 0 0;
   margin-bottom: 0px;
   margin-top:25px;
 }
@@ -197,43 +277,52 @@ input[type=submit]:hover {
 </head>
 <body>
     
+  <div class="sine"> 
+    
 <div class="header">
     
 <h1 style="align-self: flex-start">  <img src="https://i2.wp.com/lwvor.org/wp-content/uploads/2015/12/gradcap-e1454868002364.jpg" height="40" width="40">
 Sign in</h1>
-  
+      </div>
 </div>
 <div class="container">
   <form action="/action_page.php">
   
 
-      <div class="col">
-        <div class="hide-md-lg">
+      <div class="cosine">
+      
      
-        </div>
 
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
-    
-
+        <input  type="text" name="exampleEmail" class="bg-email-icon" placeholder="mail@example.com " required>
+          
+    </div>
+       <div class="cosine">
+        <input type="password" name=="password" class="bg-lock-icon" placeholder="Password" required>
+      
     </div>
       
+       <div class="cosine">
+        <input type="submit" value="SIGN IN">
+        
+
+    
+      
   </form>
+    </div>
   
-  <div class="col">  
+  <div class="com">  
    <div>
    <div class="b">
       <a style="color:black">Forgot your password ?</a> 
     
      <a style="color:black " class="c">                  Register?</a>
-         <span style="text-align:end">Register  </span>
+       
     </div>
       </div>
 </div>
 </div>
-
- <div>  <hr solid align="center" width="45%">
+;;
+ <div>  <hr solid align="center" width="375">
     </div>
     <div class="cop">
      <div> 
@@ -244,7 +333,7 @@ Sign in</h1>
           
 
     
-        <a href="#" class="fb btn " >
+        <a href="#" class="fb btn" >
           <i class="fa fa-facebook fa-fw text=center "></i> f
         </a>
         <a href="#" class="twitter btn">
